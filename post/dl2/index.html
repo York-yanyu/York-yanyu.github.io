@@ -142,7 +142,9 @@
 <li><strong>指标</strong>： 用于监控训练和测试步骤</li>
 </ol>
 <p>仅仅用这一条代码就可以让训练进行起来：</p>
-<pre><code class="language-python">model.compile(optimizer='adam',      loss=tf.keras.losses.SparseCategoricalCrossentropy(from_logits=True),              metrics=['accuracy'])
+<pre><code class="language-python">model.compile(optimizer='adam', 
+              loss=tf.keras.losses.SparseCategoricalCrossentropy(from_logits=True),  
+              metrics=['accuracy'])
 </code></pre>
 <p>之后还需要用测试集进行验证评估模型训练的效果。当然，正常还要包括可视化训练结果等工作。</p>
 <h1 id="总结">总结</h1>
