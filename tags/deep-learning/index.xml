@@ -1,28 +1,28 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Deep Learning on Yufeng Guo&#39;s site</title>
+    <title>Deep-Learning on Yufeng Guo&#39;s site</title>
     <link>https://york-yanyu.github.io/tags/deep-learning/</link>
-    <description>Recent content in Deep Learning on Yufeng Guo&#39;s site</description>
+    <description>Recent content in Deep-Learning on Yufeng Guo&#39;s site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 23 Sep 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://york-yanyu.github.io/tags/deep-learning/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 24 Sep 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://york-yanyu.github.io/tags/deep-learning/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>深度学习1</title>
-      <link>https://york-yanyu.github.io/post/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0-1/</link>
-      <pubDate>Wed, 23 Sep 2020 00:00:00 +0000</pubDate>
+      <title>打开输入输出中间的黑匣子</title>
+      <link>https://york-yanyu.github.io/post/dl2/</link>
+      <pubDate>Thu, 24 Sep 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://york-yanyu.github.io/post/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0-1/</guid>
-      <description>基本认识（1） 明确使用TensorFlow作为机器学习的框架，建立机器学习的基本认识 TensorFlow部署 在笔记本电脑里安装Miniconda； 在环境变量中添加所安装Miniconda的相关路径； 将</description>
+      <guid>https://york-yanyu.github.io/post/dl2/</guid>
+      <description>现在我理解的机器学习是这样的：训练集上有正确答案，把数据输入到深度神经网络，会有一个输出，根据这个输出与正确答案的比较，调整中间神经网络的参数。不断调整，直到输出结果与正确答案接近。那么中间的黑匣子，</description>
     </item>
     
     <item>
-      <title>深度学习2</title>
-      <link>https://york-yanyu.github.io/post/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0-2/</link>
+      <title>机器学习的目标？</title>
+      <link>https://york-yanyu.github.io/post/dl1/</link>
       <pubDate>Wed, 23 Sep 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://york-yanyu.github.io/post/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0-2/</guid>
-      <description>基本认识（2） 此篇用于统一思想。</description>
+      <guid>https://york-yanyu.github.io/post/dl1/</guid>
+      <description>明确使用TensorFlow作为机器学习的框架，建立机器学习的基本认识 TensorFlow部署 TensorFlow 是一个端到端开源机器学习平台。它拥有一个全面而灵活的生态系统，其中包含各种工具、库和社区资源，可助力研究</description>
     </item>
     
   </channel>
