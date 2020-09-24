@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+<meta name="HandheldFriendly" content="True" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+<meta name="generator" content="Hugo 0.75.1" />
+
+
+
+<link rel="apple-touch-icon" sizes="180x180" href="https://cdn.jsdelivr.net/gh/amzrk2/cdn-stcapi@1/favicons/apple-touch-icon.png" />
+<link rel="icon" type="image/png" sizes="32x32" href="https://cdn.jsdelivr.net/gh/amzrk2/cdn-stcapi@1/favicons/favicon-32x32.png" />
+<link rel="icon" type="image/png" sizes="16x16" href="https://cdn.jsdelivr.net/gh/amzrk2/cdn-stcapi@1/favicons/favicon-16x16.png" />
+<link rel="manifest" href="https://cdn.jsdelivr.net/gh/amzrk2/cdn-stcapi@1/favicons/site.webmanifest" />
+<link rel="mask-icon" href="https://cdn.jsdelivr.net/gh/amzrk2/cdn-stcapi@1/favicons/safari-pinned-tab.svg" color="#8aa2d3" />
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/amzrk2/cdn-stcapi@1/favicons/favicon.ico" />
+<meta name="theme-color" content="#ffffff" />
+
+
+<title>Scrapy - Yufeng Guo&#39;s site</title>
+
+
+<meta name="author" content="York" />
+
+
+<meta name="description" content="学习爬虫" />
+
+
+<meta name="keywords" content="Scrapy爬虫" />
+
+<meta property="og:title" content="Scrapy" />
+<meta property="og:description" content="学习爬虫" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://york-yanyu.github.io/post/%E5%AD%A6%E4%B9%A0scrapy%E7%88%AC%E8%99%AB/" />
+<meta property="og:image" content="https://york-yanyu.github.io/img/og.png"/>
+<meta property="article:published_time" content="2020-05-11T00:00:00+00:00" />
+<meta property="article:modified_time" content="2020-05-11T00:00:00+00:00" />
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://york-yanyu.github.io/img/og.png"/>
+
+<meta name="twitter:title" content="Scrapy"/>
+<meta name="twitter:description" content="学习爬虫"/>
+
+
+
+<style>
+    @media (prefers-color-scheme: dark) {
+        body[data-theme='auto'] img {
+            filter: brightness(60%);
+        }
+    }
+
+    body[data-theme='dark'] img {
+        filter: brightness(60%);
+    }
+</style>
+
+
+
+<link rel="stylesheet" href="https://york-yanyu.github.io/assets/css/fuji.min.css" />
+
+
+
+
+
+</head>
+
+<body data-theme="auto">
+    <script data-cfasync="false">
+  
+  var fujiThemeData = localStorage.getItem('fuji_data-theme');
+  
+  if (!fujiThemeData) {
+    localStorage.setItem('fuji_data-theme', 'auto');
+  } else {
+    
+    if (fujiThemeData !== 'auto') {
+      document.body.setAttribute('data-theme', fujiThemeData === 'dark' ? 'dark' : 'light');
+    }
+  }
+</script>
+
+    <header>
+    <div class="container-lg clearfix">
+        <div class="col-12 header">
+            <a class="title-main" href="https://york-yanyu.github.io/">Yufeng Guo&#39;s site</a>
+            
+            <span class="title-sub">All about me, experience &amp; thinking</span>
+            
+        </div>
+    </div>
+</header>
+
+    <main>
+        <div class="container-lg clearfix">
+            
+            <div class="col-12 col-md-9 float-left content">
+                
+<article>
+    
+    <h2 class="post-item post-title">
+        <a href="https://york-yanyu.github.io/post/%E5%AD%A6%E4%B9%A0scrapy%E7%88%AC%E8%99%AB/">Scrapy</a>
+    </h2>
+    <div class="post-item post-meta">
+        <span><i class="iconfont icon-today-sharp"></i>&nbsp;2020-05-11</span><span><i class="iconfont icon-file-tray-sharp"></i>&nbsp;2249 words</span><span><i class="iconfont icon-time-sharp"></i>&nbsp;5 minutes</span><span><i class="iconfont icon-pricetags-sharp"></i>&nbsp;<a href="/tags/scrapy%E7%88%AC%E8%99%AB">Scrapy爬虫</a>&nbsp;</span>
+
+    </div>
+    
+    
+    <div class="post-content markdown-body">
+        <h1 id="学习scrapy爬虫">学习Scrapy爬虫</h1>
+<h2 id="1">1</h2>
+<p>新的起点，我要学习一些编程知识。没有野心，并没有想要以此为生的念头。我还是本本分分做我的工作。但是编程是不能绕过去的技能，无论以后想要干什么。因此我想重新上路，重新对待编程。</p>
+<p>第一个目标，爬虫技能。</p>
+<p>日志第一天：</p>
+<ul>
+<li>
+<p>安装anoconda，并且卸载了之前笔记本里的python；</p>
+</li>
+<li>
+<p>所有包都从清华镜像下载；</p>
+</li>
+<li>
+<p>试图安装scrapy，报两个包不兼容的错，先更新所有的包，然后再试；</p>
+</li>
+<li>
+<p>成功安装scrapy</p>
+</li>
+</ul>
+<h2 id="2">2</h2>
+<p><img class="img-zoomable" src="https://www.imageoss.com/images/2020/09/23/5e926bb358ce9849c2b207509bd1ec77638821e6b92ad409.png" alt="5e926bb358ce9849c2b207509bd1ec77638821e6b92ad409.png" />
+</p>
+<ul>
+<li>官网的tutorial，第一个spider；</li>
+</ul>
+<p>![](D:\CSProject\BlogManagement\reference\Image [2].png)</p>
+<ul>
+<li><strong>scrapy框架的理解</strong></li>
+</ul>
+<p>你写一个Spyder，告诉他起始网站是啥，并且写一个parse方法，它返回你要的信息，然后找到下一个网址是什么，让爬虫继续爬下去。</p>
+<p>如何parse一个网站的内容，有两个方法，一个是css，一个是xpath，对于文本信息，没有办法的，必须熟悉正则表达式。</p>
+<p><img class="img-zoomable" src="/C:%5cUsers%5cYork%5cAppData%5cRoaming%5cTypora%5ctypora-user-images%5c1600175658895.png" alt="1600175658895" />
+</p>
+<ul>
+<li>今天的基本操作：</li>
+</ul>
+<ol>
+<li>新建一个project&mdash;scrapy startproject <em>name</em></li>
+<li>爬一个网址&mdash;scrapy shell &ldquo;<em>url</em>&quot;&mdash;后续可以在shell里面操作这个网址所对应的网站的内容，用
+response
+response.css(&hellip;)
+response.xpath(&hellip;)</li>
+<li>在project里面运行&mdash;scrapy crawl <em>name  (通常是自己起的名字，参考下个例子)</em>
+没有project直接运行&mdash;scrapy runspider <em>name.py</em></li>
+<li>![](D:\CSProject\BlogManagement\reference\Image [4].png)
+几个必备的元素：1. name2. start_urls3. parse函数
+![](D:\CSProject\BlogManagement\reference\Image [5].png)</li>
+<li>settings里面可以定义useragent</li>
+</ol>
+<h2 id="3">3</h2>
+<p><a href="https://blog.csdn.net/qq_31082427/article/details/84987723">https://blog.csdn.net/qq_31082427/article/details/84987723</a></p>
+<p>以上的链接告诉我如何使用xpath helper插件，来定位或者找到网页中某个或某类元素的xpath，通过xpath可以准备处理爬虫的网页数据。</p>
+<p>![](D:\CSProject\BlogManagement\reference\Image [7].png)</p>
+<p>一个完整的spider程序，包含：</p>
+<ol>
+<li>爬虫名</li>
+<li>入口URL</li>
+<li>解析方法：</li>
+</ol>
+<ul>
+<li>提取哪些信息（通过xpath精确定位，还需要设置获取文本，图片等）</li>
+<li>获取以后需要传送给pipeline （yield一下）</li>
+<li>获取下一个爬取的链接，深入爬取数据</li>
+</ul>
+<p>这里面的关键是，如何拆分网站的结构，然后利用xpath精确定位到自己想要的区域，再进行细分得到区域里面单门的信息，包含有文字，图片，视频，链接，基本上就是这些元素。</p>
+<p>当然还可以进一步从文本信息中，提取自己想要的部分，这应该是先把这些提取出来，再利用字符串的一些算法，来对其进行进一步的处理。我觉得这里面会涉及：</p>
+<ul>
+<li><strong>字符串的传统算法</strong></li>
+<li><strong>正则表达式</strong></li>
+</ul>
+<p>最终可以将数据生成一张表，但是这样是不好的。这涉及数据库和excel的区别。为此，必须会一种数据库，这里和python一起，我再来学习一下MongoDB。</p>
+<p><a href="https://www.cnblogs.com/cq146637/p/8082163.html">https://www.cnblogs.com/cq146637/p/8082163.html</a></p>
+<p>这个链接告诉我如何用python和MongoDB数据库进行交互。</p>
+<h2 id="4">4</h2>
+<ul>
+<li>在笔记本上上完成了mongodb的安装，并且通过创建配置文件和log文件，成功添加了mongodb的服务，现在设置为自动启动。</li>
+<li>接下来将通过pymongo来连接并且操作mongodb数据库。https://www.cnblogs.com/nixingguo/p/7260604.html这个网站介绍一些基本的操作</li>
+</ul>
+<p>![](D:\CSProject\BlogManagement\reference\Image [8].png)</p>
+<p>MongoDB中的一些概念！</p>
+<p>![](D:\CSProject\BlogManagement\reference\Image [9].png)</p>
+<p>![](D:\CSProject\BlogManagement\reference\Image [10].png)</p>
+<h2 id="5">5</h2>
+<ul>
+<li>database 库</li>
+<li>collection 相当于表</li>
+<li>document 相当于一行数据</li>
+<li>field 相当于一列数据</li>
+<li>indexprimary key</li>
+</ul>
+<p><strong>一些常用的命令，或者数据常用的操作：</strong></p>
+<ul>
+<li>
+<p>创建数据库
+use DATABASE_NAME
+(切换数据库也用这个命令)</p>
+</li>
+<li>
+<p>查看所有数据库
+show dbs
+（刚创建的数据库，需要插入一些数据才会显示）</p>
+</li>
+<li>
+<p>MongoDB 中默认的数据库为 test，如果你没有创建新的数据库，集合将存放在 test 数据库中。</p>
+</li>
+<li>
+<p>删除数据库
+db.dropDatabase()</p>
+</li>
+<li>
+<p>创建集合
+db.createCollection(name, options)
+(option可以包括以下的参数)
+![](D:\CSProject\BlogManagement\reference\Image [11].png)不需要特别创建集合，可以自动生成
+db.mycol2.insert({&ldquo;name&rdquo; : &ldquo;菜鸟教程&rdquo;})</p>
+</li>
+<li>
+<p>删除集合
+db.collection.drop()
+db.collection_name.drop()</p>
+</li>
+<li>
+<p>插入文档（document）db.COLLETION_NAME.insert(document)</p>
+</li>
+</ul>
+<p>这里有必要提一下，document是指字典数据，就是键-&gt;值，键-&gt;值，这样的形式。</p>
+<ul>
+<li>更新数据
+db.collection.update()
+![](D:\CSProject\BlogManagement\reference\Image [12].png)</li>
+</ul>
+<h2 id="6">6</h2>
+<p>MongoDB的副本集，分片是比较核心的内容，基础的部分是前面的关于数据库的操作。存储，更新，查询等等。
+MongoDB需要定义host，port，然后是数据库的名字，collection的名字：</p>
+<ul>
+<li>
+<p>host</p>
+</li>
+<li>
+<p>port</p>
+</li>
+<li>
+<p>db_name</p>
+</li>
+<li>
+<p>collection_name</p>
+</li>
+</ul>
+<p>我觉得框架的含义，就是首先将一件事情分成各个模块，模块之间相对来说比较独立，这是第一步；
+然后就是保证各个模块之间高效的通信，这是比较难的一步；</p>
+<h2 id="7">7</h2>
+<p><strong>middleware中间件:</strong></p>
+<ul>
+<li>可以设置代理ip，运用代理ip爬取数据，达到隐藏自己的目的。</li>
+<li>还可以设置user-agent，从一个列表中随机抽取一个作为使用的user_agent，也可以达到隐藏自己的目的。</li>
+</ul>
+<p>extract() 和 extract_first():
+前者提取一个数组
+后者提取第一个匹配的数据</p>
+<p>![](D:\CSProject\BlogManagement\reference\Image [13].png)</p>
+<p>![](D:\CSProject\BlogManagement\reference\Image [14].png)</p>
+<p>安装了可视化工具，方便查看mongodb的数据</p>
+<p>python中的类</p>
+<p>![](D:\CSProject\BlogManagement\reference\Image [15].png)</p>
+<p>python中的包：</p>
+<p>![](D:\CSProject\BlogManagement\reference\Image [16].png)</p>
+<p>其中的</p>
+<pre><code>__init__.py
+</code></pre>
+<p>目录只有包含一个叫做 _<em>init</em>_.py 的文件才会被认作是一个包，主要是为了避免一些滥俗的名字（比如叫做 string）不小心的影响搜索路径中的有效模块。</p>
+<p>#爬取豆瓣top250上的电影信息#解决了字符串的正则表达式的一个小问题，就是将介绍里面的主演和演员和其他信息分开，并且转变成字符串。</p>
+<h2 id="8">8</h2>
+<p>提一个新的问题，怎么爬取豆瓣top250的电影图片，并且将每张图片的名字命名为该电影的名称！
+另外，发现一个特别好的编程教程，廖雪峰的教程，深入浅出，符合我的认知。
+找到了url和名称，但是不知道怎么用pipeline将图片保存下来，保存在什么地方？</p>
+<h2 id="9">9</h2>
+<p>弄明白了怎么爬取图片，并且怎么将图片命名。
+提一个更复杂的问题，如何爬取top250各自所有的正式海报的原图？</p>
+<h2 id="10">10</h2>
+<p>![](D:\CSProject\BlogManagement\reference\Image [17].png)</p>
+<p>![](D:\CSProject\BlogManagement\reference\Image [18].png)</p>
+<h2 id="11">11</h2>
+<p>![](D:\CSProject\BlogManagement\reference\Image [19].png)</p>
+<p>![](D:\CSProject\BlogManagement\reference\Image [20].png)</p>
+<p>![](D:\CSProject\BlogManagement\reference\Image [21].png)</p>
+<p>![](D:\CSProject\BlogManagement\reference\Image [22].png)</p>
+<p>![](D:\CSProject\BlogManagement\reference\Image [23].png)</p>
+<p>![](D:\CSProject\BlogManagement\reference\Image [24].png)</p>
+<p>![](D:\CSProject\BlogManagement\reference\Image [25].png)</p>
+<h2 id="12">12</h2>
+<p>![](D:\CSProject\BlogManagement\reference\Image [26].png)</p>
+<p>![](D:\CSProject\BlogManagement\reference\Image [27].png)</p>
+<p>![](D:\CSProject\BlogManagement\reference\Image [28].png)</p>
+<p>![](D:\CSProject\BlogManagement\reference\Image [29].png)</p>
+<p>![](D:\CSProject\BlogManagement\reference\Image [30].png)</p>
+<p>![](D:\CSProject\BlogManagement\reference\Image [31].png)</p>
+<p>![](D:\CSProject\BlogManagement\reference\Image [32].png)</p>
+<p>![](D:\CSProject\BlogManagement\reference\Image [34].png)</p>
+<p>![](D:\CSProject\BlogManagement\reference\Image [35].png)</p>
+<p>![](D:\CSProject\BlogManagement\reference\Image [36].png)</p>
+
+    </div>
+</article>
+
+
+
+
+            </div>
+            <aside class="col-12 col-md-3 float-left sidebar">
+    
+    <div class="sidebar-item sidebar-pages">
+        <h3>Pages</h3>
+        <ul>
+            
+            <li>
+                <a href="/">Home</a>
+            </li>
+            
+            <li>
+                <a href="/archives/">Archives</a>
+            </li>
+            
+            <li>
+                <a href="/about/">About</a>
+            </li>
+            
+            <li>
+                <a href="/search/">Search</a>
+            </li>
+            
+        </ul>
+    </div>
+    
+    <div class="sidebar-item sidebar-tags">
+        <h3>Tags</h3>
+        <div>
+            
+            <span>
+                <a href="/tags/deep-learning/">Deep Learning</a>
+            </span>
+            
+            <span>
+                <a href="/tags/scrapy%E7%88%AC%E8%99%AB/">Scrapy爬虫</a>
+            </span>
+            
+        </div>
+    </div>
+    
+    <div class="sidebar-item sidebar-links">
+        <h3>Links</h3>
+        <ul>
+            
+            <li>
+                <a href="https://github.com/York-yanyu" target="_blank"><span>GitHub</span></a>
+            </li>
+            
+            <li>
+                <a href="https://space.bilibili.com/750963" target="_blank"><span>bilibili</span></a>
+            </li>
+            
+        </ul>
+    </div>
+    
+    
+    
+    <div class="sidebar-item sidebar-toc">
+        <h3>TOC</h3>
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#1">1</a></li>
+    <li><a href="#2">2</a></li>
+    <li><a href="#3">3</a></li>
+    <li><a href="#4">4</a></li>
+    <li><a href="#5">5</a></li>
+    <li><a href="#6">6</a></li>
+    <li><a href="#7">7</a></li>
+    <li><a href="#8">8</a></li>
+    <li><a href="#9">9</a></li>
+    <li><a href="#10">10</a></li>
+    <li><a href="#11">11</a></li>
+    <li><a href="#12">12</a></li>
+  </ul>
+</nav>
+    </div>
+    
+    
+</aside>
+        </div>
+        <div class="btn">
+    <div class="btn-toggle-mode">
+        <i class="iconfont icon-contrast-sharp"></i>
+    </div>
+    <div class="btn-scroll-top">
+        <i class="iconfont icon-chevron-up-circle-sharp"></i>
+    </div>
+</div>
+    </main>
+
+    <footer>
+    <div class="container-lg clearfix">
+        <div class="col-12 footer">
+            <span>&copy; 2020 <a href="https://york-yanyu.github.io/">York</a> |
+                Powered by <a href="https://github.com/amzrk2/hugo-theme-fuji/"
+                   target="_blank">Fuji-v2</a> & <a href="https://gohugo.io/"
+                   target="_blank">Hugo</a> </span>
+        </div>
+    </div>
+</footer>
+    
+<script defer src="https://cdn.jsdelivr.net/combine/npm/medium-zoom@1.0.6,npm/lazysizes@5.2.2"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/prismjs@1.21.0/components/prism-core.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/prismjs@1.21.0/plugins/autoloader/prism-autoloader.min.js"></script>
+
+
+
+<script defer src="/assets/js/fuji.min.js"></script>
+
+
+</body>
+
+</html>

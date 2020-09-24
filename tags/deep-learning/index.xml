@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Deep Learning on Yufeng Guo&#39;s site</title>
+    <link>https://york-yanyu.github.io/tags/deep-learning/</link>
+    <description>Recent content in Deep Learning on Yufeng Guo&#39;s site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 23 Sep 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://york-yanyu.github.io/tags/deep-learning/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>深度学习1</title>
+      <link>https://york-yanyu.github.io/post/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0-1/</link>
+      <pubDate>Wed, 23 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://york-yanyu.github.io/post/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0-1/</guid>
+      <description>基本认识（1） 明确使用TensorFlow作为机器学习的框架，建立机器学习的基本认识 TensorFlow部署 在笔记本电脑里安装Miniconda； 在环境变量中添加所安装Miniconda的相关路径； 将</description>
+    </item>
+    
+    <item>
+      <title>深度学习2</title>
+      <link>https://york-yanyu.github.io/post/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0-2/</link>
+      <pubDate>Wed, 23 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://york-yanyu.github.io/post/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0-2/</guid>
+      <description>基本认识（2） 此篇用于统一思想。</description>
+    </item>
+    
+  </channel>
+</rss>
