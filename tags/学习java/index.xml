@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>学习Java on Yufeng Guo&#39;s site</title>
+    <link>https://york-yanyu.github.io/tags/%E5%AD%A6%E4%B9%A0java/</link>
+    <description>Recent content in 学习Java on Yufeng Guo&#39;s site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 24 Sep 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://york-yanyu.github.io/tags/%E5%AD%A6%E4%B9%A0java/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>进度安排计划</title>
+      <link>https://york-yanyu.github.io/post/java-0/</link>
+      <pubDate>Thu, 24 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://york-yanyu.github.io/post/java-0/</guid>
+      <description>**Day1：**Java简介、Java程序基础 **Day2：**流程控制、数组操作 **Day3：**面向对象基础 **Day4：**Java核心类 **Day5：**异常处理 **Day6：**反射、注解</description>
+    </item>
+    
+  </channel>
+</rss>
