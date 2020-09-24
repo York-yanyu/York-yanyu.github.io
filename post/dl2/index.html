@@ -108,7 +108,7 @@
         <a href="https://york-yanyu.github.io/post/dl2/">打开输入输出中间的黑匣子</a>
     </h2>
     <div class="post-item post-meta">
-        <span><i class="iconfont icon-today-sharp"></i>&nbsp;2020-09-24</span><span><i class="iconfont icon-file-tray-sharp"></i>&nbsp;785 words</span><span><i class="iconfont icon-time-sharp"></i>&nbsp;2 minutes</span><span><i class="iconfont icon-pricetags-sharp"></i>&nbsp;<a href="/tags/deep-learning">Deep-Learning</a>&nbsp;</span>
+        <span><i class="iconfont icon-today-sharp"></i>&nbsp;2020-09-24</span><span><i class="iconfont icon-file-tray-sharp"></i>&nbsp;783 words</span><span><i class="iconfont icon-time-sharp"></i>&nbsp;2 minutes</span><span><i class="iconfont icon-pricetags-sharp"></i>&nbsp;<a href="/tags/deep-learning">Deep-Learning</a>&nbsp;</span>
 
     </div>
     
@@ -119,7 +119,7 @@
 </blockquote>
 <p><img class="img-zoomable" src="https://www.imageoss.com/images/2020/09/24/imageff60aab4b1580d94.png" alt="imageff60aab4b1580d94.png" />
 </p>
-<p>#TensorFlow提供的例子-图像分类</p>
+<h1 id="tensorflow提供的例子-图像分类">TensorFlow提供的例子-图像分类</h1>
 <p><a href="https://www.imageoss.com/image/eTpW" target="_blank"><img class="img-zoomable" src="https://www.imageoss.com/images/2020/09/24/imagea19626819a0b2c79.md.png" alt="imagea19626819a0b2c79.md.png" />
 </a></p>
 <p>只是很粗略地看待这个例子，先不关注细节。这个例子的输入输出很简单，就是输入图片数据，输出1234类别，每个数字代表一类衣服。中间黑匣子部分的网络是这样子的：</p>
@@ -145,7 +145,7 @@
 <pre><code class="language-python">model.compile(optimizer='adam',      loss=tf.keras.losses.SparseCategoricalCrossentropy(from_logits=True),              metrics=['accuracy'])
 </code></pre>
 <p>之后还需要用测试集进行验证评估模型训练的效果。当然，正常还要包括可视化训练结果等工作。</p>
-<p>#总结</p>
+<h1 id="总结">总结</h1>
 <p>在这个例子中，我认为接下来有两个问题比较关键：</p>
 <ol>
 <li>数据集中的数据要进行怎样的预处理，才会使得模型训练不出错并且高效？</li>
